@@ -1,0 +1,102 @@
+[
+    {
+        "id":1,
+        "nom":"jacket",
+        "descripcion":"Mens Winter Leathers Jackets",
+        "preu":"48.00",
+        "descompte":"96.00",
+        "puntuacio":"1",
+        "img":"src/assets/images/products/jacket-3.jpg",
+        "descomptePor":"50%"
+    },
+
+    {
+        "id":2,
+        "nom":"Shirt",
+        "descripcion":"Pure Garment Dyed Cotton Shirt",
+        "preu":"45.00",
+        "descompte":"56.00",
+        "puntuacio":"3",
+        "img":"src/assets/images/products/shirt-1.jpg"
+    },
+
+    {
+        "id":3,
+        "nom":"Jacket",
+        "descripcion":"MEN Yarn Fleece Full-Zip Jacket",
+        "preu":"58.00",
+        "descompte":"65.00",
+        "puntuacio":"4",
+        "img":"src/assets/images/products/jacket-5.jpg"
+    },
+
+    {
+        "id":4,
+        "nom":"Skirt",
+        "descripcion":"Black Floral Wrap Midi Skirt",
+        "preu":"25.00",
+        "descompte":"35.00",
+        "puntuacio":"5",
+        "img":"src/assets/images/products/clothes-3.jpg"
+    },
+
+    {
+        "id":5,
+        "nom":"Pocket Watch",
+        "descripcion":"Pocket Watch Leather Pouch",
+        "preu":"100.00",
+        "descompte":"150.00",
+        "puntuacio":"5",
+        "img":"src/assets/images/products/watch-3.jpg"
+    },
+
+    {
+        "id":6,
+        "nom":"Digital Watch",
+        "descripcion":"Smart watch Vital Plus",
+        "preu":"120.00",
+        "descompte":"180.00",
+        "puntuacio":"5",
+        "img":"src/assets/images/products/watch-1.jpg"
+    },
+
+    {
+        "id":7,
+        "nom":"Party wear shoes",
+        "descripcion":"Womens Party Wear Shoes",
+        "preu":"110.00",
+        "descompte":"170.00",
+        "puntuacio":"5",
+        "img":"src/assets/images/products/party-wear-1.jpg"
+    },
+
+    {
+        "id":8,
+        "nom":"Sport shoes",
+        "descripcion":"Running & Trekking Shoes - White",
+        "preu":"58.00",
+        "descompte":"89.00",
+        "puntuacio":"5",
+        "img":"src/assets/images/products/sports-1.jpg"
+    },
+
+    {
+        "id":9,
+        "nom":"Sport shoes213123",
+        "descripcion":"Running & Tre33112 kking Shoes - White",
+        "preu":"28.00",
+        "descompte":"85.00",
+        "puntuacio":"5",
+        "img":"src/assets/images/products/sports-1.jpg"
+    },
+
+    {
+        "id":10,
+        "nom":"Sp2312313ort shoes",
+        "descripcion":"Running & Trek323231king Shoes - White",
+        "preu":"582.00",
+        "descompte":"891.00",
+        "puntuacio":"5",
+        "img":"src/assets/images/products/sports-1.jpg"
+    }
+]
