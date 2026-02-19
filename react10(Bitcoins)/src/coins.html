@@ -1,0 +1,1197 @@
+﻿<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" href="/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#000000">
+  <meta name="description" content="Web site created using create-react-app">
+  <link rel="apple-touch-icon" href="/logo192.png">
+  <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+  <link rel="manifest" href="/manifest.json">
+  <!--
+      Notice the use of  in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+  <title>React App</title>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root">
+    <div class="container">
+      <div class="row">
+        <input type="text" placeholder="Search a Coin"
+          class="form-control bg-dark text-light border-0 mt-4 text-center">
+        <table class="table table-dark mt-4 table-hover">
+          <thead>
+            <tr>
+              <td>#</td>
+              <td>Coin</td>
+              <td>Price</td>
+              <td>Price Change</td>
+              <td>24h Volume</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="text-muted">1</td>
+              <td>
+                <img src="https://coin-images.coingecko.com/coins/images/1/large/bitcoin.png?1696501400" alt=""
+                  class="img-fluid me-4" style="width: 3%;">
+                <span>Bitcoin</span>
+                <span class="ms-3 text-muted">btc</span>
+              </td>
+              <td>$94,453</td>
+              <td class="text-success">2.9456</td>
+              <td>$65,100,928,931</td>
+            </tr>
+            <tr>
+              <td class="text-muted">2</td>
+              <td><img src="https://coin-images.coingecko.com/coins/images/279/large/ethereum.png?1696501628" alt=""
+                  class="img-fluid me-4" style="width: 3%;"><span>Ethereum</span><span
+                  class="ms-3 text-muted">eth</span></td>
+              <td>$3,
+                119</td>
+              <td class="text-success">0.48958</td>
+              <td>$29,
+                059,
+                998,
+                228</td>
+            </tr>
+            <tr>
+              <td class="text-muted">3</td>
+              <td><img src="https://coin-images.coingecko.com/coins/images/325/large/Tether.png?1696501661" alt=""
+                  class="img-fluid me-4" style="width: 3%;"><span>Tether</span><span class="ms-3 text-muted">usdt</span>
+              </td>
+              <td>$1.003</td>
+              <td class="text-success">0.53768</td>
+              <td>$86,
+                416,
+                789,
+                161</td>
+            </tr>
+            <tr>
+              <td class="text-muted">4</td>
+              <td><img src="https://coin-images.coingecko.com/coins/images/4128/large/solana.png?1718769756" alt=""
+                  class="img-fluid me-4" style="width: 3%;"><span>Solana</span><span class="ms-3 text-muted">sol</span>
+              </td>
+              <td>$238.83</td>
+              <td class="text-danger">-1.4147</td>
+              <td>$8,
+                618,
+                529,
+                150</td>
+            </tr>
+            <tr>
+              <td class="text-muted">5</td>
+              <td><img src="https://coin-images.coingecko.com/coins/images/825/large/bnb-icon2_2x.png?1696501970" alt=""
+                  class="img-fluid me-4" style="width: 3%;"><span>BNB</span><span class="ms-3 text-muted">bnb</span>
+              </td>
+              <td>$616.37</td>
+              <td class="text-success">0.16912</td>
+              <td>$1,
+                533,
+                205,
+                997</td>
+            </tr>
+            <tr>
+              <td class="text-muted">6</td>
+              <td><img src="https://coin-images.coingecko.com/coins/images/44/large/xrp-symbol-white-128.png?1696501442"
+                  alt="" class="img-fluid me-4" style="width: 3%;"><span>XRP</span><span
+                  class="ms-3 text-muted">xrp</span></td>
+              <td>$1.13</td>
+              <td class="text-success">3.13492</td>
+              <td>$7,
+                017,
+                557,
+                753</td>
+            </tr>
+            <tr>
+              <td class="text-muted">7</td>
+              <td><img src="https://coin-images.coingecko.com/coins/images/5/large/dogecoin.png?1696501409" alt=""
+                  class="img-fluid me-4" style="width: 3%;"><span>Dogecoin</span><span
+                  class="ms-3 text-muted">doge</span></td>
+              <td>$0.392</td>
+              <td class="text-danger">-1.4277</td>
+              <td>$13,
+                512,
+                137,
+                491</td>
+            </tr>
+            <tr>
+              <td class="text-muted">8</td>
+              <td><img src="https://coin-images.coingecko.com/coins/images/6319/large/usdc.png?1696506694" alt=""
+                  class="img-fluid me-4" style="width: 3%;"><span>USDC</span><span class="ms-3 text-muted">usdc</span>
+              </td>
+              <td>$1.002</td>
+              <td class="text-success">0.38763</td>
+              <td>$7,
+                708,
+                747,
+                217</td>
+            </tr>
+            <tr>
+              <td class="text-muted">9</td>
+              <td><img src="https://coin-images.coingecko.com/coins/images/13442/large/steth_logo.png?1696513206" alt=""
+                  class="img-fluid me-4" style="width: 3%;"><span>Lido Staked Ether</span><span
+                  class="ms-3 text-muted">steth</span></td>
+              <td>$3,
+                120</td>
+              <td class="text-success">0.53759</td>
+              <td>$82,
+                351,
+                155</td>
+            </tr>
+            <tr>
+              <td class="text-muted">10</td>
+              <td><img src="https://coin-images.coingecko.com/coins/images/975/large/cardano.png?1696502090" alt=""
+                  class="img-fluid me-4" style="width: 3%;"><span>Cardano</span><span class="ms-3 text-muted">ada</span>
+              </td>
+              <td>$0.836</td>
+              <td class="text-success">13.81199</td>
+              <td>$3,
+                705,
+                270,
+                324</td>
+            </tr>
+            <tr>
+              <td class="text-muted">11</td>
+              <td><img src="https://coin-images.coingecko.com/coins/images/1094/large/tron-logo.png?1696502193" alt=""
+                  class="img-fluid me-4" style="width: 3%;"><span>TRON</span><span class="ms-3 text-muted">trx</span>
+              </td>
+              <td>$0.198</td>
+              <td class="text-danger">-2.1995</td>
+              <td>$801,
+                683,
+                756</td>
+            </tr>
+            <tr>
+              <td class="text-muted">12</td>
+              <td><img src="https://coin-images.coingecko.com/coins/images/11939/large/shiba.png?1696511800" alt=""
+                  class="img-fluid me-4" style="width: 3%;"><span>Shiba Inu</span><span
+                  class="ms-3 text-muted">shib</span></td>
+              <td>$0</td>
+              <td class="text-danger">-3.36687</td>
+              <td>$1,
+                904,
+                275,
+                342</td>
+            </tr>
+            <tr>
+              <td class="text-muted">13</td>
+              <td><img
+                  src="https://coin-images.coingecko.com/coins/images/12559/large/Avalanche_Circle_RedWhite_Trans.png?1696512369"
+                  alt="" class="img-fluid me-4" style="width: 3%;"><span>Avalanche</span><span
+                  class="ms-3 text-muted">avax</span></td>
+              <td>$34.96</td>
+              <td class="text-success">0.92411</td>
+              <td>$764,
+                871,
+                123</td>
+            </tr>
+            <tr>
+              <td class="text-muted">14</td>
+              <td><img
+                  src="https://coin-images.coingecko.com/coins/images/17980/large/photo_2024-09-10_17.09.00.jpeg?1725963446"
+                  alt="" class="img-fluid me-4" style="width: 3%;"><span>Toncoin</span><span
+                  class="ms-3 text-muted">ton</span></td>
+              <td>$5.44</td>
+              <td class="text-danger">-1.22457</td>
+              <td>$342,
+                730,
+                925</td>
+            </tr>
+            <tr>
+              <td class="text-muted">15</td>
+              <td><img
+                  src="https://coin-images.coingecko.com/coins/images/7598/large/wrapped_bitcoin_wbtc.png?1696507857"
+                  alt="" class="img-fluid me-4" style="width: 3%;"><span>Wrapped Bitcoin</span><span
+                  class="ms-3 text-muted">wbtc</span></td>
+              <td>$94,
+                043</td>
+              <td class="text-success">2.29386</td>
+              <td>$623,
+                650,
+                411</td>
+            </tr>
+            <tr>
+              <td class="text-muted">16</td>
+              <td><img src="https://coin-images.coingecko.com/coins/images/18834/large/wstETH.png?1696518295" alt=""
+                  class="img-fluid me-4" style="width: 3%;"><span>Wrapped stETH</span><span
+                  class="ms-3 text-muted">wsteth</span></td>
+              <td>$3,
+                672.79</td>
+              <td class="text-danger">-0.24077</td>
+              <td>$69,
+                239,
+                197</td>
+            </tr>
+            <tr>
+              <td class="text-muted">17</td>
+              <td><img src="https://coin-images.coingecko.com/coins/images/26375/large/sui-ocean-square.png?1727791290"
+                  alt="" class="img-fluid me-4" style="width: 3%;"><span>Sui</span><span
+                  class="ms-3 text-muted">sui</span></td>
+              <td>$3.69</td>
+              <td class="text-success">0.45665</td>
+              <td>$2,
+                131,
+                160,
+                792</td>
+            </tr>
+            <tr>
+              <td class="text-muted">18</td>
+              <td><img src="https://coin-images.coingecko.com/coins/images/877/large/chainlink-new-logo.png?1696502009"
+                  alt="" class="img-fluid me-4" style="width: 3%;"><span>Chainlink</span><span
+                  class="ms-3 text-muted">link</span></td>
+              <td>$14.91</td>
+              <td class="text-success">0.83548</td>
+              <td>$918,
+                779,
+                923</td>
+            </tr>
+            <tr>
+              <td class="text-muted">19</td>
+              <td><img src="https://coin-images.coingecko.com/coins/images/2518/large/weth.png?1696503332" alt=""
+                  class="img-fluid me-4" style="width: 3%;"><span>WETH</span><span class="ms-3 text-muted">weth</span>
+              </td>
+              <td>$3,
+                115.98</td>
+              <td class="text-success">0.2305</td>
+              <td>$848,
+                466,
+                236</td>
+            </tr>
+            <tr>
+              <td class="text-muted">20</td>
+              <td><img src="https://coin-images.coingecko.com/coins/images/780/large/bitcoin-cash-circle.png?1696501932"
+                  alt="" class="img-fluid me-4" style="width: 3%;"><span>Bitcoin Cash</span><span
+                  class="ms-3 text-muted">bch</span></td>
+              <td>$446.94</td>
+              <td class="text-danger">-0.34454</td>
+              <td>$408,
+                798,
+                180</td>
+            </tr>
+            <tr>
+              <td class="text-muted">21</td>
+              <td><img src="https://coin-images.coingecko.com/coins/images/12171/large/polkadot.png?1696512008" alt=""
+                  class="img-fluid me-4" style="width: 3%;"><span>Polkadot</span><span
+                  class="ms-3 text-muted">dot</span></td>
+              <td>$5.98</td>
+              <td class="text-success">3.19338</td>
+              <td>$622,
+                800,
+                511</td>
+            </tr>
+            <tr>
+              <td class="text-muted">22</td>
+              <td><img src="https://coin-images.coingecko.com/coins/images/29850/large/pepe-token.jpeg?1696528776"
+                  alt="" class="img-fluid me-4" style="width: 3%;"><span>Pepe</span><span
+                  class="ms-3 text-muted">pepe</span></td>
+              <td>$0</td>
+              <td class="text-danger">-1.28502</td>
+              <td>$5,
+                472,
+                672,
+                963</td>
+            </tr>
+            <tr>
+              <td class="text-muted">23</td>
+              <td><img src="https://coin-images.coingecko.com/coins/images/8418/large/leo-token.png?1696508607" alt=""
+                  class="img-fluid me-4" style="width: 3%;"><span>LEO Token</span><span
+                  class="ms-3 text-muted">leo</span></td>
+              <td>$8.2</td>
+              <td class="text-success">4.16545</td>
+              <td>$3,
+                738,
+                660</td>
+            </tr>
+            <tr>
+              <td class="text-muted">24</td>
+              <td><img
+                  src="https://coin-images.coingecko.com/coins/images/100/large/Stellar_symbol_black_RGB.png?1696501482"
+                  alt="" class="img-fluid me-4" style="width: 3%;"><span>Stellar</span><span
+                  class="ms-3 text-muted">xlm</span></td>
+              <td>$0.246</td>
+              <td class="text-success">7.69691</td>
+              <td>$1,
+                341,
+                493,
+                784</td>
+            </tr>
+            <tr>
+              <td class="text-muted">25</td>
+              <td><img src="https://coin-images.coingecko.com/coins/images/10365/large/near.jpg?1696510367" alt=""
+                  class="img-fluid me-4" style="width: 3%;"><span>NEAR Protocol</span><span
+                  class="ms-3 text-muted">near</span></td>
+              <td>$5.73</td>
+              <td class="text-danger">-1.73955</td>
+              <td>$700,
+                218,
+                135</td>
+            </tr>
+            <tr>
+              <td class="text-muted">26</td>
+              <td><img src="https://coin-images.coingecko.com/coins/images/26455/large/aptos_round.png?1696525528"
+                  alt="" class="img-fluid me-4" style="width: 3%;"><span>Aptos</span><span
+                  class="ms-3 text-muted">apt</span></td>
+              <td>$12.3</td>
+              <td class="text-success">5.51736</td>
+              <td>$1,
+                114,
+                236,
+                881</td>
+            </tr>
+            <tr>
+              <td class="text-muted">27</td>
+              <td><img src="https://coin-images.coingecko.com/coins/images/2/large/litecoin.png?1696501400" alt=""
+                  class="img-fluid me-4" style="width: 3%;"><span>Litecoin</span><span
+                  class="ms-3 text-muted">ltc</span></td>
+              <td>$86.64</td>
+              <td class="text-danger">-1.03192</td>
+              <td>$955,
+                576,
+                502</td>
+            </tr>
+            <tr>
+              <td class="text-muted">28</td>
+              <td><img src="https://coin-images.coingecko.com/coins/images/33033/large/weETH.png?1701438396" alt=""
+                  class="img-fluid me-4" style="width: 3%;"><span>Wrapped eETH</span><span
+                  class="ms-3 text-muted">weeth</span></td>
+              <td>$3,
+                278.66</td>
+              <td class="text-success">0.19128</td>
+              <td>$9,
+                755,
+                598</td>
+            </tr>
+            <tr>
+              <td class="text-muted">29</td>
+              <td><img src="https://coin-images.coingecko.com/coins/images/12504/large/uniswap-logo.png?1720676669"
+                  alt="" class="img-fluid me-4" style="width: 3%;"><span>Uniswap</span><span
+                  class="ms-3 text-muted">uni</span></td>
+              <td>$9.06</td>
+              <td class="text-danger">-2.45047</td>
+              <td>$414,
+                302,
+                487</td>
+            </tr>
+            <tr>
+              <td class="text-muted">30</td>
+              <td><img src="https://coin-images.coingecko.com/coins/images/39926/large/usds.webp?1726666683" alt=""
+                  class="img-fluid me-4" style="width: 3%;"><span>USDS</span><span class="ms-3 text-muted">usds</span>
+              </td>
+              <td>$0.996</td>
+              <td class="text-success">0.28561</td>
+              <td>$4,
+                756,
+                140</td>
+            </tr>
+            <tr>
+              <td class="text-muted">31</td>
+              <td><img src="https://coin-images.coingecko.com/coins/images/7310/large/cro_token_logo.png?1696507599"
+                  alt="" class="img-fluid me-4" style="width: 3%;"><span>Cronos</span><span
+                  class="ms-3 text-muted">cro</span></td>
+              <td>$0.18</td>
+              <td class="text-success">7.22817</td>
+              <td>$174,
+                758,
+                537</td>
+            </tr>
+            <tr>
+              <td class="text-muted">32</td>
+              <td><img src="https://coin-images.coingecko.com/coins/images/3688/large/hbar.png?1696504364" alt=""
+                  class="img-fluid me-4" style="width: 3%;"><span>Hedera</span><span class="ms-3 text-muted">hbar</span>
+              </td>
+              <td>$0.127</td>
+              <td class="text-danger">-8.97055</td>
+              <td>$1,
+                020,
+                723,
+                801</td>
+            </tr>
+            <tr>
+              <td class="text-muted">33</td>
+              <td><img
+                  src="https://coin-images.coingecko.com/coins/images/14495/large/Internet_Computer_logo.png?1696514180"
+                  alt="" class="img-fluid me-4" style="width: 3%;"><span>Internet Computer</span><span
+                  class="ms-3 text-muted">icp</span></td>
+              <td>$9.27</td>
+              <td class="text-danger">-0.60985</td>
+              <td>$189,
+                013,
+                601</td>
+            </tr>
+            <tr>
+              <td class="text-muted">34</td>
+              <td><img src="https://coin-images.coingecko.com/coins/images/11636/large/rndr.png?1696511529" alt=""
+                  class="img-fluid me-4" style="width: 3%;"><span>Render</span><span
+                  class="ms-3 text-muted">render</span></td>
+              <td>$7.98</td>
+              <td class="text-danger">-0.1711</td>
+              <td>$463,
+                244,
+                278</td>
+            </tr>
+            <tr>
+              <td class="text-muted">35</td>
+              <td><img src="https://coin-images.coingecko.com/coins/images/28600/large/bonk.jpg?1696527587" alt=""
+                  class="img-fluid me-4" style="width: 3%;"><span>Bonk</span><span class="ms-3 text-muted">bonk</span>
+              </td>
+              <td>$0</td>
+              <td class="text-success">4.37583</td>
+              <td>$3,
+                599,
+                539,
+                612</td>
+            </tr>
+            <tr>
+              <td class="text-muted">36</td>
+              <td><img
+                  src="https://coin-images.coingecko.com/coins/images/25751/large/kaspa-icon-exchanges.png?1696524837"
+                  alt="" class="img-fluid me-4" style="width: 3%;"><span>Kaspa</span><span
+                  class="ms-3 text-muted">kas</span></td>
+              <td>$0.161</td>
+              <td class="text-danger">-6.66701</td>
+              <td>$202,
+                133,
+                097</td>
+            </tr>
+            <tr>
+              <td class="text-muted">37</td>
+              <td><img
+                  src="https://coin-images.coingecko.com/coins/images/453/large/ethereum-classic-logo.png?1696501717"
+                  alt="" class="img-fluid me-4" style="width: 3%;"><span>Ethereum Classic</span><span
+                  class="ms-3 text-muted">etc</span></td>
+              <td>$26.11</td>
+              <td class="text-danger">-0.90934</td>
+              <td>$289,
+                077,
+                553</td>
+            </tr>
+            <tr>
+              <td class="text-muted">38</td>
+              <td><img src="https://coin-images.coingecko.com/coins/images/32440/large/polygon.png?1698233684" alt=""
+                  class="img-fluid me-4" style="width: 3%;"><span>POL (ex-MATIC)</span><span
+                  class="ms-3 text-muted">pol</span></td>
+              <td>$0.451</td>
+              <td class="text-success">3.5082</td>
+              <td>$365,
+                329,
+                773</td>
+            </tr>
+            <tr>
+              <td class="text-muted">39</td>
+              <td><img src="https://coin-images.coingecko.com/coins/images/28452/large/ARUsPeNQ_400x400.jpeg?1696527447"
+                  alt="" class="img-fluid me-4" style="width: 3%;"><span>Bittensor</span><span
+                  class="ms-3 text-muted">tao</span></td>
+              <td>$480.04</td>
+              <td class="text-danger">-1.62089</td>
+              <td>$257,
+                208,
+                058</td>
+            </tr>
+            <tr>
+              <td class="text-muted">40</td>
+              <td><img src="https://coin-images.coingecko.com/coins/images/33613/large/USDE.png?1716355685" alt=""
+                  class="img-fluid me-4" style="width: 3%;"><span>Ethena USDe</span><span
+                  class="ms-3 text-muted">usde</span></td>
+              <td>$1.005</td>
+              <td class="text-success">0.42669</td>
+              <td>$299,
+                111,
+                684</td>
+            </tr>
+            <tr>
+              <td class="text-muted">41</td>
+              <td><img src="https://coin-images.coingecko.com/coins/images/27045/large/wbt_token.png?1696526096" alt=""
+                  class="img-fluid me-4" style="width: 3%;"><span>WhiteBIT Coin</span><span
+                  class="ms-3 text-muted">wbt</span></td>
+              <td>$24.09</td>
+              <td class="text-success">8.58802</td>
+              <td>$38,
+                603,
+                970</td>
+            </tr>
+            <tr>
+              <td class="text-muted">42</td>
+              <td><img src="https://coin-images.coingecko.com/coins/images/12151/large/OM_Token.png?1696511991" alt=""
+                  class="img-fluid me-4" style="width: 3%;"><span>MANTRA</span><span class="ms-3 text-muted">om</span>
+              </td>
+              <td>$3.85</td>
+              <td class="text-danger">-5.56847</td>
+              <td>$325,
+                900,
+                390</td>
+            </tr>
+            <tr>
+              <td class="text-muted">43</td>
+              <td><img src="https://coin-images.coingecko.com/coins/images/9956/large/Badge_Dai.png?1696509996" alt=""
+                  class="img-fluid me-4" style="width: 3%;"><span>Dai</span><span class="ms-3 text-muted">dai</span>
+              </td>
+              <td>$1.003</td>
+              <td class="text-success">0.61866</td>
+              <td>$179,
+                300,
+                892</td>
+            </tr>
+            <tr>
+              <td class="text-muted">44</td>
+              <td><img src="https://coin-images.coingecko.com/coins/images/5681/large/ASI.png?1719827289" alt=""
+                  class="img-fluid me-4" style="width: 3%;"><span>Artificial Superintelligence Alliance</span><span
+                  class="ms-3 text-muted">fet</span></td>
+              <td>$1.29</td>
+              <td class="text-danger">-1.22736</td>
+              <td>$360,
+                080,
+                622</td>
+            </tr>
+            <tr>
+              <td class="text-muted">45</td>
+              <td><img src="https://coin-images.coingecko.com/coins/images/33566/large/dogwifhat.jpg?1702499428" alt=""
+                  class="img-fluid me-4" style="width: 3%;"><span>dogwifhat</span><span
+                  class="ms-3 text-muted">wif</span></td>
+              <td>$3.27</td>
+              <td class="text-danger">-5.72549</td>
+              <td>$1,
+                037,
+                575,
+                057</td>
+            </tr>
+            <tr>
+              <td class="text-muted">46</td>
+              <td><img src="https://coin-images.coingecko.com/coins/images/69/large/monero_logo.png?1696501460" alt=""
+                  class="img-fluid me-4" style="width: 3%;"><span>Monero</span><span class="ms-3 text-muted">xmr</span>
+              </td>
+              <td>$160.69</td>
+              <td class="text-success">1.41696</td>
+              <td>$114,
+                769,
+                419</td>
+            </tr>
+            <tr>
+              <td class="text-muted">47</td>
+              <td><img src="https://coin-images.coingecko.com/coins/images/16547/large/arb.jpg?1721358242" alt=""
+                  class="img-fluid me-4" style="width: 3%;"><span>Arbitrum</span><span
+                  class="ms-3 text-muted">arb</span></td>
+              <td>$0.691</td>
+              <td class="text-danger">-0.84718</td>
+              <td>$598,
+                395,
+                057</td>
+            </tr>
+            <tr>
+              <td class="text-muted">48</td>
+              <td><img src="https://coin-images.coingecko.com/coins/images/2069/large/Stacks_Logo_png.png?1709979332"
+                  alt="" class="img-fluid me-4" style="width: 3%;"><span>Stacks</span><span
+                  class="ms-3 text-muted">stx</span></td>
+              <td>$1.87</td>
+              <td class="text-danger">-3.09567</td>
+              <td>$224,
+                896,
+                046</td>
+            </tr>
+            <tr>
+              <td class="text-muted">49</td>
+              <td><img src="https://coin-images.coingecko.com/coins/images/12817/large/filecoin.png?1696512609" alt=""
+                  class="img-fluid me-4" style="width: 3%;"><span>Filecoin</span><span
+                  class="ms-3 text-muted">fil</span></td>
+              <td>$4.42</td>
+              <td class="text-success">0.19227</td>
+              <td>$306,
+                805,
+                439</td>
+            </tr>
+            <tr>
+              <td class="text-muted">50</td>
+              <td><img
+                  src="https://coin-images.coingecko.com/coins/images/4463/large/WeChat_Image_20220118095654.png?1696505053"
+                  alt="" class="img-fluid me-4" style="width: 3%;"><span>OKB</span><span
+                  class="ms-3 text-muted">okb</span></td>
+              <td>$43.95</td>
+              <td class="text-success">0.09091</td>
+              <td>$5,
+                717,
+                177</td>
+            </tr>
+            <tr>
+              <td class="text-muted">51</td>
+              <td><img src="https://coin-images.coingecko.com/coins/images/1167/large/VET_Token_Icon.png?1710013505"
+                  alt="" class="img-fluid me-4" style="width: 3%;"><span>VeChain</span><span
+                  class="ms-3 text-muted">vet</span></td>
+              <td>$0.032</td>
+              <td class="text-danger">-2.22938</td>
+              <td>$138,
+                179,
+                155</td>
+            </tr>
+            <tr>
+              <td class="text-muted">52</td>
+              <td><img src="https://coin-images.coingecko.com/coins/images/1481/large/cosmos_hub.png?1696502525" alt=""
+                  class="img-fluid me-4" style="width: 3%;"><span>Cosmos Hub</span><span
+                  class="ms-3 text-muted">atom</span></td>
+              <td>$6.39</td>
+              <td class="text-success">0.0798</td>
+              <td>$373,
+                507,
+                274</td>
+            </tr>
+            <tr>
+              <td class="text-muted">53</td>
+              <td><img src="https://coin-images.coingecko.com/coins/images/30980/large/token-logo.png?1696529819" alt=""
+                  class="img-fluid me-4" style="width: 3%;"><span>Mantle</span><span class="ms-3 text-muted">mnt</span>
+              </td>
+              <td>$0.734</td>
+              <td class="text-danger">-0.42521</td>
+              <td>$117,
+                821,
+                375</td>
+            </tr>
+            <tr>
+              <td class="text-muted">54</td>
+              <td><img src="https://coin-images.coingecko.com/coins/images/12645/large/aave-token-round.png?1720472354"
+                  alt="" class="img-fluid me-4" style="width: 3%;"><span>Aave</span><span
+                  class="ms-3 text-muted">aave</span></td>
+              <td>$163.63</td>
+              <td class="text-danger">-1.0084</td>
+              <td>$355,
+                712,
+                430</td>
+            </tr>
+            <tr>
+              <td class="text-muted">55</td>
+              <td><img src="https://coin-images.coingecko.com/coins/images/12882/large/Secondary_Symbol.png?1696512670"
+                  alt="" class="img-fluid me-4" style="width: 3%;"><span>Injective</span><span
+                  class="ms-3 text-muted">inj</span></td>
+              <td>$24.41</td>
+              <td class="text-danger">-1.48883</td>
+              <td>$252,
+                583,
+                506</td>
+            </tr>
+            <tr>
+              <td class="text-muted">56</td>
+              <td><img src="https://coin-images.coingecko.com/coins/images/31079/large/FDUSD_icon_black.png?1731097953"
+                  alt="" class="img-fluid me-4" style="width: 3%;"><span>First Digital USD</span><span
+                  class="ms-3 text-muted">fdusd</span></td>
+              <td>$1.001</td>
+              <td class="text-success">1.11038</td>
+              <td>$7,
+                703,
+                298,
+                302</td>
+            </tr>
+            <tr>
+              <td class="text-muted">57</td>
+              <td><img src="https://coin-images.coingecko.com/coins/images/16746/large/PNG_image.png?1696516318" alt=""
+                  class="img-fluid me-4" style="width: 3%;"><span>FLOKI</span><span class="ms-3 text-muted">floki</span>
+              </td>
+              <td>$0</td>
+              <td class="text-danger">-4.10195</td>
+              <td>$625,
+                294,
+                006</td>
+            </tr>
+            <tr>
+              <td class="text-muted">58</td>
+              <td><img src="https://coin-images.coingecko.com/coins/images/25244/large/Optimism.png?1696524385" alt=""
+                  class="img-fluid me-4" style="width: 3%;"><span>Optimism</span><span class="ms-3 text-muted">op</span>
+              </td>
+              <td>$1.78</td>
+              <td class="text-success">1.36148</td>
+              <td>$507,
+                927,
+                362</td>
+            </tr>
+            <tr>
+              <td class="text-muted">59</td>
+              <td><img src="https://coin-images.coingecko.com/coins/images/13397/large/Graph_Token.png?1696513159"
+                  alt="" class="img-fluid me-4" style="width: 3%;"><span>The Graph</span><span
+                  class="ms-3 text-muted">grt</span></td>
+              <td>$0.232</td>
+              <td class="text-success">0.56648</td>
+              <td>$322,
+                054,
+                725</td>
+            </tr>
+            <tr>
+              <td class="text-muted">60</td>
+              <td><img
+                  src="https://coin-images.coingecko.com/coins/images/17233/large/immutableX-symbol-BLK-RGB.png?1696516787"
+                  alt="" class="img-fluid me-4" style="width: 3%;"><span>Immutable</span><span
+                  class="ms-3 text-muted">imx</span></td>
+              <td>$1.32</td>
+              <td class="text-danger">-3.3431</td>
+              <td>$116,
+                061,
+                167</td>
+            </tr>
+            <tr>
+              <td class="text-muted">61</td>
+              <td><img src="https://coin-images.coingecko.com/coins/images/31967/large/tia.jpg?1696530772" alt=""
+                  class="img-fluid me-4" style="width: 3%;"><span>Celestia</span><span
+                  class="ms-3 text-muted">tia</span></td>
+              <td>$5.09</td>
+              <td class="text-danger">-4.21926</td>
+              <td>$205,
+                265,
+                188</td>
+            </tr>
+            <tr>
+              <td class="text-muted">62</td>
+              <td><img
+                  src="https://coin-images.coingecko.com/coins/images/28205/large/Sei_Logo_-_Transparent.png?1696527207"
+                  alt="" class="img-fluid me-4" style="width: 3%;"><span>Sei</span><span
+                  class="ms-3 text-muted">sei</span></td>
+              <td>$0.484</td>
+              <td class="text-danger">-2.83412</td>
+              <td>$280,
+                088,
+                955</td>
+            </tr>
+            <tr>
+              <td class="text-muted">63</td>
+              <td><img src="https://coin-images.coingecko.com/coins/images/4001/large/Fantom_round.png?1696504642"
+                  alt="" class="img-fluid me-4" style="width: 3%;"><span>Fantom</span><span
+                  class="ms-3 text-muted">ftm</span></td>
+              <td>$0.693</td>
+              <td class="text-danger">-0.68702</td>
+              <td>$311,
+                973,
+                853</td>
+            </tr>
+            <tr>
+              <td class="text-muted">64</td>
+              <td><img src="https://coin-images.coingecko.com/coins/images/11610/large/icon_colour.png?1696511504"
+                  alt="" class="img-fluid me-4" style="width: 3%;"><span>Bitget Token</span><span
+                  class="ms-3 text-muted">bgb</span></td>
+              <td>$1.36</td>
+              <td class="text-success">0.30473</td>
+              <td>$74,
+                240,
+                438</td>
+            </tr>
+            <tr>
+              <td class="text-muted">65</td>
+              <td><img src="https://coin-images.coingecko.com/coins/images/39580/large/weth.png?1723006716" alt=""
+                  class="img-fluid me-4" style="width: 3%;"><span>Binance-Peg WETH</span><span
+                  class="ms-3 text-muted">weth</span></td>
+              <td>$3,
+                099.25</td>
+              <td class="text-danger">-0.69738</td>
+              <td>$76,
+                932,
+                248</td>
+            </tr>
+            <tr>
+              <td class="text-muted">66</td>
+              <td><img src="https://coin-images.coingecko.com/coins/images/4380/large/download.png?1696504978" alt=""
+                  class="img-fluid me-4" style="width: 3%;"><span>Algorand</span><span
+                  class="ms-3 text-muted">algo</span></td>
+              <td>$0.223</td>
+              <td class="text-success">5.76909</td>
+              <td>$365,
+                039,
+                174</td>
+            </tr>
+            <tr>
+              <td class="text-muted">67</td>
+              <td><img src="https://coin-images.coingecko.com/coins/images/6595/large/Rune200x200.png?1696506946" alt=""
+                  class="img-fluid me-4" style="width: 3%;"><span>THORChain</span><span
+                  class="ms-3 text-muted">rune</span></td>
+              <td>$5.26</td>
+              <td class="text-danger">-1.42799</td>
+              <td>$416,
+                545,
+                924</td>
+            </tr>
+            <tr>
+              <td class="text-muted">68</td>
+              <td><img src="https://coin-images.coingecko.com/coins/images/35529/large/1000050750.png?1709031995" alt=""
+                  class="img-fluid me-4" style="width: 3%;"><span>Brett</span><span class="ms-3 text-muted">brett</span>
+              </td>
+              <td>$0.174</td>
+              <td class="text-danger">-1.50243</td>
+              <td>$130,
+                295,
+                342</td>
+            </tr>
+            <tr>
+              <td class="text-muted">69</td>
+              <td><img src="https://coin-images.coingecko.com/coins/images/2538/large/theta-token-logo.png?1696503349"
+                  alt="" class="img-fluid me-4" style="width: 3%;"><span>Theta Network</span><span
+                  class="ms-3 text-muted">theta</span></td>
+              <td>$1.67</td>
+              <td class="text-danger">-5.88255</td>
+              <td>$82,
+                580,
+                790</td>
+            </tr>
+            <tr>
+              <td class="text-muted">70</td>
+              <td><img src="https://coin-images.coingecko.com/coins/images/33760/large/image.jpg?1702964227" alt=""
+                  class="img-fluid me-4" style="width: 3%;"><span>Popcat</span><span
+                  class="ms-3 text-muted">popcat</span></td>
+              <td>$1.68</td>
+              <td class="text-danger">-9.708</td>
+              <td>$160,
+                715,
+                244</td>
+            </tr>
+            <tr>
+              <td class="text-muted">71</td>
+              <td><img src="https://coin-images.coingecko.com/coins/images/20764/large/reth.png?1696520159" alt=""
+                  class="img-fluid me-4" style="width: 3%;"><span>Rocket Pool ETH</span><span
+                  class="ms-3 text-muted">reth</span></td>
+              <td>$3,
+                479.29</td>
+              <td class="text-danger">-0.3521</td>
+              <td>$9,
+                575,
+                274</td>
+            </tr>
+            <tr>
+              <td class="text-muted">72</td>
+              <td><img src="https://coin-images.coingecko.com/coins/images/13928/large/PSigc4ie_400x400.jpg?1696513668"
+                  alt="" class="img-fluid me-4" style="width: 3%;"><span>Raydium</span><span
+                  class="ms-3 text-muted">ray</span></td>
+              <td>$5.59</td>
+              <td class="text-danger">-0.63521</td>
+              <td>$135,
+                901,
+                467</td>
+            </tr>
+            <tr>
+              <td class="text-muted">73</td>
+              <td><img src="https://coin-images.coingecko.com/coins/images/51301/large/pnut.jpg?1730602041" alt=""
+                  class="img-fluid me-4" style="width: 3%;"><span>Peanut the Squirrel</span><span
+                  class="ms-3 text-muted">pnut</span></td>
+              <td>$1.61</td>
+              <td class="text-danger">-3.57576</td>
+              <td>$1,
+                851,
+                093,
+                660</td>
+            </tr>
+            <tr>
+              <td class="text-muted">74</td>
+              <td><img src="https://coin-images.coingecko.com/coins/images/36530/large/ethena.png?1711701436" alt=""
+                  class="img-fluid me-4" style="width: 3%;"><span>Ethena</span><span class="ms-3 text-muted">ena</span>
+              </td>
+              <td>$0.543</td>
+              <td class="text-danger">-1.60143</td>
+              <td>$301,
+                085,
+                646</td>
+            </tr>
+            <tr>
+              <td class="text-muted">75</td>
+              <td><img src="https://coin-images.coingecko.com/coins/images/34188/large/jup.png?1704266489" alt=""
+                  class="img-fluid me-4" style="width: 3%;"><span>Jupiter</span><span class="ms-3 text-muted">jup</span>
+              </td>
+              <td>$1.12</td>
+              <td class="text-danger">-4.80391</td>
+              <td>$225,
+                996,
+                709</td>
+            </tr>
+            <tr>
+              <td class="text-muted">76</td>
+              <td><img src="https://coin-images.coingecko.com/coins/images/31924/large/pyth.png?1701245725" alt=""
+                  class="img-fluid me-4" style="width: 3%;"><span>Pyth Network</span><span
+                  class="ms-3 text-muted">pyth</span></td>
+              <td>$0.416</td>
+              <td class="text-success">0.95507</td>
+              <td>$153,
+                913,
+                139</td>
+            </tr>
+            <tr>
+              <td class="text-muted">77</td>
+              <td><img src="https://coin-images.coingecko.com/coins/images/31069/large/worldcoin.jpeg?1696529903" alt=""
+                  class="img-fluid me-4" style="width: 3%;"><span>Worldcoin</span><span
+                  class="ms-3 text-muted">wld</span></td>
+              <td>$2.24</td>
+              <td class="text-danger">-2.95102</td>
+              <td>$542,
+                395,
+                507</td>
+            </tr>
+            <tr>
+              <td class="text-muted">78</td>
+              <td><img
+                  src="https://coin-images.coingecko.com/coins/images/33345/large/symbol_transparent_bg.png?1701697066"
+                  alt="" class="img-fluid me-4" style="width: 3%;"><span>Mantle Staked Ether</span><span
+                  class="ms-3 text-muted">meth</span></td>
+              <td>$3,
+                267.23</td>
+              <td class="text-success">0.51011</td>
+              <td>$23,
+                143,
+                402</td>
+            </tr>
+            <tr>
+              <td class="text-muted">79</td>
+              <td><img src="https://coin-images.coingecko.com/coins/images/36800/large/solvBTC.png?1719810684" alt=""
+                  class="img-fluid me-4" style="width: 3%;"><span>Solv Protocol SolvBTC</span><span
+                  class="ms-3 text-muted">solvbtc</span></td>
+              <td>$94,
+                122</td>
+              <td class="text-success">2.75693</td>
+              <td>$16,
+                498,
+                825</td>
+            </tr>
+            <tr>
+              <td class="text-muted">80</td>
+              <td><img src="https://coin-images.coingecko.com/coins/images/40143/large/cbbtc.webp?1726136727" alt=""
+                  class="img-fluid me-4" style="width: 3%;"><span>Coinbase Wrapped BTC</span><span
+                  class="ms-3 text-muted">cbbtc</span></td>
+              <td>$94,
+                430</td>
+              <td class="text-success">2.64407</td>
+              <td>$384,
+                252,
+                916</td>
+            </tr>
+            <tr>
+              <td class="text-muted">81</td>
+              <td><img src="https://coin-images.coingecko.com/coins/images/26580/large/ONDO.png?1696525656" alt=""
+                  class="img-fluid me-4" style="width: 3%;"><span>Ondo</span><span class="ms-3 text-muted">ondo</span>
+              </td>
+              <td>$1.027</td>
+              <td class="text-success">0.70158</td>
+              <td>$224,
+                633,
+                696</td>
+            </tr>
+            <tr>
+              <td class="text-muted">82</td>
+              <td><img src="https://coin-images.coingecko.com/coins/images/34753/large/Ezeth_logo_circle.png?1713496404"
+                  alt="" class="img-fluid me-4" style="width: 3%;"><span>Renzo Restaked ETH</span><span
+                  class="ms-3 text-muted">ezeth</span></td>
+              <td>$3,
+                195.78</td>
+              <td class="text-success">0.0367</td>
+              <td>$10,
+                979,
+                675</td>
+            </tr>
+            <tr>
+              <td class="text-muted">83</td>
+              <td><img src="https://coin-images.coingecko.com/coins/images/6799/large/BSV.png?1696507128" alt=""
+                  class="img-fluid me-4" style="width: 3%;"><span>Bitcoin SV</span><span
+                  class="ms-3 text-muted">bsv</span></td>
+              <td>$69.97</td>
+              <td class="text-success">0.66914</td>
+              <td>$41,
+                536,
+                845</td>
+            </tr>
+            <tr>
+              <td class="text-muted">84</td>
+              <td><img src="https://coin-images.coingecko.com/coins/images/1364/large/Mark_Maker.png?1696502423" alt=""
+                  class="img-fluid me-4" style="width: 3%;"><span>Maker</span><span class="ms-3 text-muted">mkr</span>
+              </td>
+              <td>$1,
+                523.86</td>
+              <td class="text-success">2.65608</td>
+              <td>$187,
+                300,
+                339</td>
+            </tr>
+            <tr>
+              <td class="text-muted">85</td>
+              <td><img src="https://coin-images.coingecko.com/coins/images/1047/large/sa9z79.png?1696502152" alt=""
+                  class="img-fluid me-4" style="width: 3%;"><span>KuCoin</span><span class="ms-3 text-muted">kcs</span>
+              </td>
+              <td>$10.94</td>
+              <td class="text-success">1.28588</td>
+              <td>$204,
+                182</td>
+            </tr>
+            <tr>
+              <td class="text-muted">86</td>
+              <td><img src="https://coin-images.coingecko.com/coins/images/3370/large/5ZOu7brX_400x400.jpg?1696504070"
+                  alt="" class="img-fluid me-4" style="width: 3%;"><span>Quant</span><span
+                  class="ms-3 text-muted">qnt</span></td>
+              <td>$88.84</td>
+              <td class="text-danger">-1.32214</td>
+              <td>$79,
+                035,
+                782</td>
+            </tr>
+            <tr>
+              <td class="text-muted">87</td>
+              <td><img src="https://coin-images.coingecko.com/coins/images/17752/large/mSOL.png?1696517278" alt=""
+                  class="img-fluid me-4" style="width: 3%;"><span>Marinade Staked SOL</span><span
+                  class="ms-3 text-muted">msol</span></td>
+              <td>$295.51</td>
+              <td class="text-danger">-1.48589</td>
+              <td>$23,
+                428,
+                218</td>
+            </tr>
+            <tr>
+              <td class="text-muted">88</td>
+              <td><img src="https://coin-images.coingecko.com/coins/images/8183/large/gate.png?1696508395" alt=""
+                  class="img-fluid me-4" style="width: 3%;"><span>Gate</span><span class="ms-3 text-muted">gt</span>
+              </td>
+              <td>$9.8</td>
+              <td class="text-success">0.66486</td>
+              <td>$4,
+                725,
+                782</td>
+            </tr>
+            <tr>
+              <td class="text-muted">89</td>
+              <td><img src="https://coin-images.coingecko.com/coins/images/32417/large/chain-logo.png?1698114384" alt=""
+                  class="img-fluid me-4" style="width: 3%;"><span>Beam</span><span class="ms-3 text-muted">beam</span>
+              </td>
+              <td>$0.023</td>
+              <td class="text-danger">-6.01728</td>
+              <td>$74,
+                169,
+                211</td>
+            </tr>
+            <tr>
+              <td class="text-muted">90</td>
+              <td><img src="https://coin-images.coingecko.com/coins/images/4343/large/oRt6SiEN_400x400.jpg?1696504946"
+                  alt="" class="img-fluid me-4" style="width: 3%;"><span>Arweave</span><span
+                  class="ms-3 text-muted">ar</span></td>
+              <td>$18.04</td>
+              <td class="text-danger">-3.2995</td>
+              <td>$180,
+                387,
+                350</td>
+            </tr>
+            <tr>
+              <td class="text-muted">91</td>
+              <td><img
+                  src="https://coin-images.coingecko.com/coins/images/12493/large/GALA_token_image_-_200PNG.png?1709725869"
+                  alt="" class="img-fluid me-4" style="width: 3%;"><span>GALA</span><span
+                  class="ms-3 text-muted">gala</span></td>
+              <td>$0.029</td>
+              <td class="text-danger">-2.73332</td>
+              <td>$258,
+                927,
+                909</td>
+            </tr>
+            <tr>
+              <td class="text-muted">92</td>
+              <td><img src="https://coin-images.coingecko.com/coins/images/976/large/Tezos-logo.png?1696502091" alt=""
+                  class="img-fluid me-4" style="width: 3%;"><span>Tezos</span><span class="ms-3 text-muted">xtz</span>
+              </td>
+              <td>$1.083</td>
+              <td class="text-success">0.99958</td>
+              <td>$224,
+                433,
+                389</td>
+            </tr>
+            <tr>
+              <td class="text-muted">93</td>
+              <td><img src="https://coin-images.coingecko.com/coins/images/50717/large/GOAT_LOGO_NEW.jpg?1731292759"
+                  alt="" class="img-fluid me-4" style="width: 3%;"><span>Goatseus Maximus</span><span
+                  class="ms-3 text-muted">goat</span></td>
+              <td>$1.084</td>
+              <td class="text-success">3.05675</td>
+              <td>$406,
+                605,
+                211</td>
+            </tr>
+            <tr>
+              <td class="text-muted">94</td>
+              <td><img
+                  src="https://coin-images.coingecko.com/coins/images/13446/large/5f6294c0c7a8cda55cb1c936_Flow_Wordmark.png?1696513210"
+                  alt="" class="img-fluid me-4" style="width: 3%;"><span>Flow</span><span
+                  class="ms-3 text-muted">flow</span></td>
+              <td>$0.694</td>
+              <td class="text-danger">-1.33663</td>
+              <td>$81,
+                185,
+                201</td>
+            </tr>
+            <tr>
+              <td class="text-muted">95</td>
+              <td><img src="https://coin-images.coingecko.com/coins/images/22457/large/btt_logo.png?1696521780" alt=""
+                  class="img-fluid me-4" style="width: 3%;"><span>BitTorrent</span><span
+                  class="ms-3 text-muted">btt</span></td>
+              <td>$0</td>
+              <td class="text-danger">-2.70383</td>
+              <td>$46,
+                366,
+                178</td>
+            </tr>
+            <tr>
+              <td class="text-muted">96</td>
+              <td><img src="https://coin-images.coingecko.com/coins/images/28624/large/FLR-icon200x200.png?1696527609"
+                  alt="" class="img-fluid me-4" style="width: 3%;"><span>Flare</span><span
+                  class="ms-3 text-muted">flr</span></td>
+              <td>$0.02</td>
+              <td class="text-danger">-0.54391</td>
+              <td>$16,
+                688,
+                038</td>
+            </tr>
+            <tr>
+              <td class="text-muted">97</td>
+              <td><img src="https://coin-images.coingecko.com/coins/images/13573/large/Lido_DAO.png?1696513326" alt=""
+                  class="img-fluid me-4" style="width: 3%;"><span>Lido DAO</span><span
+                  class="ms-3 text-muted">ldo</span></td>
+              <td>$1.17</td>
+              <td class="text-danger">-1.64132</td>
+              <td>$181,
+                691,
+                631</td>
+            </tr>
+            <tr>
+              <td class="text-muted">98</td>
+              <td><img src="https://coin-images.coingecko.com/coins/images/4713/large/polygon.png?1698233745" alt=""
+                  class="img-fluid me-4" style="width: 3%;"><span>Polygon</span><span
+                  class="ms-3 text-muted">matic</span></td>
+              <td>$0.451</td>
+              <td class="text-success">3.42585</td>
+              <td>$15,
+                725,
+                464</td>
+            </tr>
+            <tr>
+              <td class="text-muted">99</td>
+              <td><img
+                  src="https://coin-images.coingecko.com/coins/images/28478/large/lightenicon_200x200.png?1696527472"
+                  alt="" class="img-fluid me-4" style="width: 3%;"><span>Fasttoken</span><span
+                  class="ms-3 text-muted">ftn</span></td>
+              <td>$3.13</td>
+              <td class="text-success">1.67132</td>
+              <td>$56,
+                889,
+                183</td>
+            </tr>
+            <tr>
+              <td class="text-muted">100</td>
+              <td><img src="https://coin-images.coingecko.com/coins/images/39969/large/LBTC_Logo.png?1724959872" alt=""
+                  class="img-fluid me-4" style="width: 3%;"><span>Lombard Staked BTC</span><span
+                  class="ms-3 text-muted">lbtc</span></td>
+              <td>$94,
+                159</td>
+              <td class="text-success">2.36051</td>
+              <td>$4,
+                444,
+                928</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
