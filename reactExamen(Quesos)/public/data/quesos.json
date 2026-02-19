@@ -1,0 +1,258 @@
+[
+    {
+        "id": 1,
+        "name": "Ricotta",
+        "Characteristics": {
+            "Pairing": "Nuts",
+            "Age": "31 months",
+            "FatContent": "23%"
+        },
+        "Price": {
+            "Preu": 2.00,
+            "Discount": 16
+        },
+        "Origin": "Italy",
+        "img": "./img/ricotta.png",
+        "estrella": 5
+    },
+    {
+        "id": 2,
+        "name": "Roquefort",
+        "Characteristics": {
+            "Pairing": "Wine",
+            "Age": "40 months",
+            "FatContent": "92%"
+        },
+        "Price": {
+            "Preu": 52.00,
+            "Discount": 23
+        },
+        "Origin": "France",
+        "img": "./img/roquefort.png",
+        "estrella": 3.5
+    },
+    {
+        "id": 3,
+        "name": "Emmental",
+        "Characteristics": {
+            "Pairing": "Laland",
+            "Age": "12 months",
+            "FatContent": "23%"
+        },
+        "Price": {
+            "Preu": 62.00,
+            "Discount": 18
+        },
+        "Origin": "Switzerland",
+        "img": "./img/emmental.png",
+        "estrella": 2
+    },
+    {
+        "id": 4,
+        "name": "Camembert",
+        "Characteristics": {
+            "Pairing": "Cheese",
+            "Age": "67 days",
+            "FatContent": "33%"
+        },
+        "Price": {
+            "Preu": 14.23,
+            "Discount": 12
+        },
+        "Origin": "France",
+        "img": "./img/camembert.png",
+        "estrella": 4
+    },
+    {
+        "id": 5,
+        "name": "Cheddar",
+        "Characteristics": {
+            "Pairing": "Cheese",
+            "Age": "67 months",
+            "FatContent": "30%"
+        },
+        "Price": {
+            "Preu": 15.20,
+            "Discount": 10
+        },
+        "Origin": "England",
+        "img": "./img/cheddar.png",
+        "estrella": 2.5
+    },
+    {
+        "id": 6,
+        "name": "Gouda",
+        "Characteristics": {
+            "Pairing": "Juan",
+            "Age": "20 months",
+            "FatContent": "50%"
+        },
+        "Price": {
+            "Preu": 17.24,
+            "Discount": 30
+        },
+        "Origin": "Netherlands",
+        "img": "./img/gouda.png",
+        "estrella": 1
+    },
+    {
+        "id": 7,
+        "name": "Gruyere",
+        "Characteristics": {
+            "Pairing": "perePau",
+            "Age": "10 days",
+            "FatContent": "23%"
+        },
+        "Price": {
+            "Preu": 28.23,
+            "Discount": 20
+        },
+        "Origin": "Switzerland",
+        "img": "./img/gruyere.png",
+        "estrella": 4.5
+    },
+    {
+        "id": 8,
+        "name": "Blue",
+        "Characteristics": {
+            "Pairing": "Wine",
+            "Age": "14 days",
+            "FatContent": "33%"
+        },
+        "Price": {
+            "Preu": 89.33,
+            "Discount": 15
+        },
+        "Origin": "Denmark",
+        "img": "./img/blue.png",
+        "estrella": 3.5
+    },
+    {
+        "id": 9,
+        "name": "Ricotta2",
+        "Characteristics": {
+            "Pairing": "Nuts",
+            "Age": "31 months",
+            "FatContent": "23%"
+        },
+        "Price": {
+            "Preu": 2.00,
+            "Discount": 16
+        },
+        "Origin": "Italy",
+        "img": "./img/ricotta.png",
+        "estrella": 1.5
+    },
+    {
+        "id": 10,
+        "name": "Roquefort2",
+        "Characteristics": {
+            "Pairing": "Wine",
+            "Age": "40 months",
+            "FatContent": "92%"
+        },
+        "Price": {
+            "Preu": 52.00,
+            "Discount": 23
+        },
+        "Origin": "France",
+        "img": "./img/roquefort.png",
+        "estrella": 4
+    },
+    {
+        "id": 11,
+        "name": "Emmental2",
+        "Characteristics": {
+            "Pairing": "Laland",
+            "Age": "12 months",
+            "FatContent": "23%"
+        },
+        "Price": {
+            "Preu": 62.00,
+            "Discount": 18
+        },
+        "Origin": "Switzerland",
+        "img": "./img/emmental.png",
+        "estrella": 5
+    },
+    {
+        "id": 12,
+        "name": "Camembert2",
+        "Characteristics": {
+            "Pairing": "Cheese",
+            "Age": "67 days",
+            "FatContent": "33%"
+        },
+        "Price": {
+            "Preu": 14.23,
+            "Discount": 12
+        },
+        "Origin": "France",
+        "img": "./img/camembert.png",
+        "estrella": 3.5
+    },
+    {
+        "id": 13,
+        "name": "Cheddar",
+        "Characteristics": {
+            "Pairing": "Cheese",
+            "Age": "67 months",
+            "FatContent": "30%"
+        },
+        "Price": {
+            "Preu": 15.20,
+            "Discount": 10
+        },
+        "Origin": "England",
+        "img": "./img/cheddar.png",
+        "estrella": 5
+    },
+    {
+        "id": 14,
+        "name": "Gouda2",
+        "Characteristics": {
+            "Pairing": "Juan",
+            "Age": "20 months",
+            "FatContent": "50%"
+        },
+        "Price": {
+            "Preu": 17.24,
+            "Discount": 30
+        },
+        "Origin": "Netherlands",
+        "img": "./img/gouda.png",
+        "estrella": 2
+    },
+    {
+        "id": 15,
+        "name": "Gruyere2",
+        "Characteristics": {
+            "Pairing": "perePau",
+            "Age": "10 days",
+            "FatContent": "23%"
+        },
+        "Price": {
+            "Preu": 28.23,
+            "Discount": 20
+        },
+        "Origin": "Switzerland",
+        "img": "./img/gruyere.png",
+        "estrella": 4
+    },
+    {
+        "id": 16,
+        "name": "Blue2",
+        "Characteristics": {
+            "Pairing": "Wine",
+            "Age": "14 days",
+            "FatContent": "33%"
+        },
+        "Price": {
+            "Preu": 89.33,
+            "Discount": 15
+        },
+        "Origin": "Denmark",
+        "img": "./img/blue.png",
+        "estrella": 3
+    }
+]

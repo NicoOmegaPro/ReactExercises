@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>Cheese Shop</title>
+  <link href="./css/style.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div id="root">
+    <header>
+      <h1 style="text-transform: uppercase; letter-spacing: 0.6px;">🧀 Welcome to the Cheese Shop</h1>
+      <nav class="site-nav">
+        <ul>
+          <li><a class="site-nav__link site-nav__link--current" href="/">All</a></li>
+          <li><a class="site-nav__link" href="/aged">Aged</a></li>
+          <li><a class="site-nav__link" href="/blue">Blue</a></li>
+          <li><a class="site-nav__link" href="/brined">Brined</a></li>
+          <li><a class="site-nav__link" href="/fresh">Fresh</a></li>
+          <li><a class="site-nav__link" href="/hard">Hard</a></li>
+          <li><a class="site-nav__link" href="/semi-soft">Semi-soft</a></li>
+          <li><a class="site-nav__link" href="/soft">Soft</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="panel">
+        <div class="panel__row"><input class="panel__field" id="min-price" placeholder="Min Price"
+            type="number" /><input class="panel__field" id="max-price" placeholder="Max Price" type="number" /><select
+            class="panel__field" id="fat-filter">
+            <option value="">Fat Content (All)</option>
+            <option value="low">Low (≤ 25%)</option>
+            <option value="medium">Medium (&lt; 30%)</option>
+            <option value="high">High (≥ 30%)</option>
+          </select><button class="btn-action" id="apply-filters">Filter</button></div>
+        <div class="panel__row"><input class="panel__field" id="pairing-search" placeholder="Search by Pairing"
+            type="text" /></div>
+      </div>
+      <section class="product-matrix" id="grid-cheeses">
+        <article class="product-tile">
+          <img alt="Brie" src="./img/brie.png">
+          <h3>Name: Brie</h3>
+          <h4>Origin: Switzerland</h4>
+          <h4>Pairing: Crackers</h4>
+          <h4>Age: 31 months</h4>
+          <h4>Fat Content: 33%</h4>
+          <div class="item-price"><span class="item-price__label">Price:</span><span
+              class="item-price__old">€8.99</span><span class="item-price__new">€7.64</span><span
+              class="item-price__badge">-15%</span></div>
+          <div class="scoreline"><i class="fa-solid fa-star score-on"></i><i class="fa-regular fa-star"></i><i
+              class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
+          <button class="btn-action">Delete</button>
+        </article>
+        <article class="product-tile">
+          <img alt="Camembert" src="./img/camembert.png">
+          <h3>Name: Camembert</h3>
+          <h4>Origin: Greece</h4>
+          <h4>Pairing: Nuts</h4>
+          <h4>Age: 26 months</h4>
+          <h4>Fat Content: 29%</h4>
+          <div class="item-price"><span class="item-price__label">Price:</span><span
+              class="item-price__old">€9.49</span><span class="item-price__new">€7.59</span><span
+              class="item-price__badge">-20%</span></div>
+          <div class="scoreline"><i class="fa-solid fa-star score-on"></i><i class="fa-solid fa-star score-on"></i><i
+              class="fa-solid fa-star score-on"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
+          </div>
+          <button class="btn-action">Delete</button>
+        </article>
+        <article class="product-tile">
+          <img alt="Cheddar" src="./img/cheddar.png">
+          <h3>Name: Cheddar</h3>
+          <h4>Origin: Greece</h4>
+          <h4>Pairing: Fruit</h4>
+          <h4>Age: 7 months</h4>
+          <h4>Fat Content: 26%</h4>
+          <div class="item-price"><span class="item-price__label">Price:</span><span
+              class="item-price__old">€7.99</span><span class="item-price__new">€7.19</span><span
+              class="item-price__badge">-10%</span></div>
+          <div class="scoreline"><i class="fa-solid fa-star score-on"></i><i class="fa-regular fa-star"></i><i
+              class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
+          <button class="btn-action">Delete</button>
+        </article>
+        <article class="product-tile">
+          <img alt="Gouda" src="./img/gouda.png">
+          <h3>Name: Gouda</h3>
+          <h4>Origin: Italy</h4>
+          <h4>Pairing: Wine</h4>
+          <h4>Age: 32 months</h4>
+          <h4>Fat Content: 33%</h4>
+          <div class="item-price"><span class="item-price__label">Price:</span><span
+              class="item-price__old">€10.99</span><span class="item-price__new">€8.24</span><span
+              class="item-price__badge">-25%</span></div>
+          <div class="scoreline">
+            <i class="fa-solid fa-star score-on"></i>
+            <i class="fa-solid fa-star score-on"></i>
+            <i class="fa-solid fa-star score-on"></i>
+            <i class="fa-solid fa-star score-on"></i>
+            <i class="fa-solid fa-star-half-stroke score-on"></i>
+          </div>
+          <button class="btn-action">Delete</button>
+        </article>
+        <article class="product-tile">
+          <img alt="Gruyere" src="./img/gruyere.png">
+          <h3>Name: Gruyere</h3>
+          <h4>Origin: Italy</h4>
+          <h4>Pairing: Nuts</h4>
+          <h4>Age: 8 months</h4>
+          <h4>Fat Content: 25%</h4>
+          <div class="item-price"><span class="item-price__label">Price:</span><span
+              class="item-price__old">€11.49</span><span class="item-price__new">€9.77</span><span
+              class="item-price__badge">-15%</span></div>
+          <div class="scoreline"><i class="fa-solid fa-star score-on"></i><i class="fa-solid fa-star score-on"></i><i
+              class="fa-solid fa-star score-on"></i><i class="fa-solid fa-star score-on"></i><i
+              class="fa-solid fa-star-half-stroke score-on"></i></div>
+          <button class="btn-action">Delete</button>
+        </article>
+        <article class="product-tile">
+          <img alt="Roquefort" src="./img/roquefort.png">
+          <h3>Name: Roquefort</h3>
+          <h4>Origin: Spain</h4>
+          <h4>Pairing: Nuts</h4>
+          <h4>Age: 1 months</h4>
+          <h4>Fat Content: 24%</h4>
+          <div class="item-price"><span class="item-price__label">Price:</span><span
+              class="item-price__old">€12.99</span><span class="item-price__new">€9.09</span><span
+              class="item-price__badge">-30%</span></div>
+          <div class="scoreline"><i class="fa-solid fa-star score-on"></i><i class="fa-solid fa-star score-on"></i><i
+              class="fa-solid fa-star score-on"></i><i class="fa-solid fa-star-half-stroke score-on"></i><i
+              class="fa-regular fa-star"></i></div>
+          <button class="btn-action">Delete</button>
+        </article>
+        <article class="product-tile">
+          <img alt="Parmesan" src="./img/parmesan.png">
+          <h3>Name: Parmesan</h3>
+          <h4>Origin: France</h4>
+          <h4>Pairing: Crackers</h4>
+          <h4>Age: 36 months</h4>
+          <h4>Fat Content: 31%</h4>
+          <div class="item-price"><span class="item-price__label">Price:</span><span
+              class="item-price__old">€13.49</span><span class="item-price__new">€10.79</span><span
+              class="item-price__badge">-20%</span></div>
+          <div class="scoreline"><i class="fa-solid fa-star score-on"></i><i class="fa-solid fa-star score-on"></i><i
+              class="fa-solid fa-star score-on"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
+          </div>
+          <button class="btn-action">Delete</button>
+        </article>
+        <article class="product-tile">
+          <img alt="Mozzarella" src="./img/mozzarella.png">
+          <h3>Name: Mozzarella</h3>
+          <h4>Origin: England</h4>
+          <h4>Pairing: Nuts</h4>
+          <h4>Age: 35 months</h4>
+          <h4>Fat Content: 29%</h4>
+          <div class="item-price"><span class="item-price__label">Price:</span><span
+              class="item-price__old">€6.49</span><span class="item-price__new">€5.84</span><span
+              class="item-price__badge">-10%</span></div>
+          <div class="scoreline"><i class="fa-solid fa-star-half-stroke score-on"></i><i
+              class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i
+              class="fa-regular fa-star"></i></div>
+          <button class="btn-action">Delete</button>
+        </article>
+        <article class="product-tile">
+          <img alt="Manchego" src="./img/manchego.png">
+          <h3>Name: Manchego</h3>
+          <h4>Origin: Italy</h4>
+          <h4>Pairing: Wine</h4>
+          <h4>Age: 26 months</h4>
+          <h4>Fat Content: 33%</h4>
+          <div class="item-price"><span class="item-price__label">Price:</span><span
+              class="item-price__old">€10.49</span><span class="item-price__new">€8.92</span><span
+              class="item-price__badge">-15%</span></div>
+          <div class="scoreline"><i class="fa-solid fa-star score-on"></i><i class="fa-regular fa-star"></i><i
+              class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
+          <button class="btn-action">Delete</button>
+        </article>
+        <article class="product-tile">
+          <img alt="Feta" src="./img/feta.png">
+          <h3>Name: Feta</h3>
+          <h4>Origin: Italy</h4>
+          <h4>Pairing: Fruit</h4>
+          <h4>Age: 32 months</h4>
+          <h4>Fat Content: 21%</h4>
+          <div class="item-price"><span class="item-price__label">Price:</span><span
+              class="item-price__old">€5.99</span><span class="item-price__new">€4.79</span><span
+              class="item-price__badge">-20%</span></div>
+          <div class="scoreline"><i class="fa-solid fa-star score-on"></i><i class="fa-solid fa-star score-on"></i><i
+              class="fa-solid fa-star-half-stroke score-on"></i><i class="fa-regular fa-star"></i><i
+              class="fa-regular fa-star"></i></div>
+          <button class="btn-action">Delete</button>
+        </article>
+        <article class="product-tile">
+          <img alt="Burrata" src="./img/burrata.png">
+          <h3>Name: Burrata</h3>
+          <h4>Origin: Spain</h4>
+          <h4>Pairing: Nuts</h4>
+          <h4>Age: 16 months</h4>
+          <h4>Fat Content: 28%</h4>
+          <div class="item-price"><span class="item-price__label">Price:</span><span
+              class="item-price__old">€9.99</span><span class="item-price__new">€7.49</span><span
+              class="item-price__badge">-25%</span></div>
+          <div class="scoreline"><i class="fa-solid fa-star score-on"></i><i class="fa-solid fa-star score-on"></i><i
+              class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
+          <button class="btn-action">Delete</button>
+        </article>
+        <article class="product-tile">
+          <img alt="Emmental" src="./img/emmental.png">
+          <h3>Name: Emmental</h3>
+          <h4>Origin: Netherlands</h4>
+          <h4>Pairing: Nuts</h4>
+          <h4>Age: 35 months</h4>
+          <h4>Fat Content: 20%</h4>
+          <div class="item-price"><span class="item-price__label">Price:</span><span
+              class="item-price__old">€8.49</span><span class="item-price__new">€7.22</span><span
+              class="item-price__badge">-15%</span></div>
+          <div class="scoreline"><i class="fa-solid fa-star score-on"></i><i class="fa-solid fa-star score-on"></i><i
+              class="fa-solid fa-star score-on"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
+          </div>
+          <button class="btn-action">Delete</button>
+        </article>
+        <article class="product-tile">
+          <img alt="Provolone" src="./img/provolone.png">
+          <h3>Name: Provolone</h3>
+          <h4>Origin: England</h4>
+          <h4>Pairing: Fruit</h4>
+          <h4>Age: 4 months</h4>
+          <h4>Fat Content: 20%</h4>
+          <div class="item-price"><span class="item-price__label">Price:</span><span
+              class="item-price__old">€7.49</span><span class="item-price__new">€5.99</span><span
+              class="item-price__badge">-20%</span></div>
+          <div class="scoreline"><i class="fa-solid fa-star score-on"></i><i
+              class="fa-solid fa-star-half-stroke score-on"></i><i class="fa-regular fa-star"></i><i
+              class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
+          <button class="btn-action">Delete</button>
+        </article>
+        <article class="product-tile">
+          <img alt="Halloumi" src="./img/halloumi.png">
+          <h3>Name: Halloumi</h3>
+          <h4>Origin: France</h4>
+          <h4>Pairing: Nuts</h4>
+          <h4>Age: 4 months</h4>
+          <h4>Fat Content: 32%</h4>
+          <div class="item-price"><span class="item-price__label">Price:</span><span
+              class="item-price__old">€9.29</span><span class="item-price__new">€8.36</span><span
+              class="item-price__badge">-10%</span></div>
+          <div class="scoreline"><i class="fa-solid fa-star score-on"></i><i class="fa-regular fa-star"></i><i
+              class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
+          <button class="btn-action">Delete</button>
+        </article>
+        <article class="product-tile">
+          <img alt="Ricotta" src="./img/ricotta.png">
+          <h3>Name: Ricotta</h3>
+          <h4>Origin: France</h4>
+          <h4>Pairing: Crackers</h4>
+          <h4>Age: 2 months</h4>
+          <h4>Fat Content: 28%</h4>
+          <div class="item-price"><span class="item-price__label">Price:</span><span
+              class="item-price__old">€6.99</span><span class="item-price__new">€5.94</span><span
+              class="item-price__badge">-15%</span></div>
+          <div class="scoreline"><i class="fa-solid fa-star score-on"></i><i class="fa-solid fa-star score-on"></i><i
+              class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
+          <button class="btn-action">Delete</button>
+        </article>
+        <article class="product-tile">
+          <img alt="Taleggio" src="./img/taleggio.png">
+          <h3>Name: Taleggio</h3>
+          <h4>Origin: Spain</h4>
+          <h4>Pairing: Fruit</h4>
+          <h4>Age: 13 months</h4>
+          <h4>Fat Content: 20%</h4>
+          <div class="item-price"><span class="item-price__label">Price:</span><span
+              class="item-price__old">€11.99</span><span class="item-price__new">€8.99</span><span
+              class="item-price__badge">-25%</span></div>
+          <div class="scoreline"><i class="fa-solid fa-star score-on"></i><i
+              class="fa-solid fa-star-half-stroke score-on"></i><i class="fa-regular fa-star"></i><i
+              class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></div>
+          <button class="btn-action">Delete</button>
+        </article>
+      </section>
+    </main>
+
+    <section class="morebar" aria-label="Load more">
+      <button class="morebar__btn" type="button" style="min-width: 180px; letter-spacing: 0.4px;">Show More</button>
+    </section>
+
+    <footer>
+      <p>© 2025 Cheese Shop. All rights reserved.</p>
+      <ul class="footer-nav">
+        <li><a href="#terms">Terms of Service</a></li>
+        <li><a href="#privacy">Privacy Policy</a></li>
+      </ul>
+    </footer>
+  </div>
+</body>
+
+</html>
