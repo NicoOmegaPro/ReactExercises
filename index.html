@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cambiar tema</title>
+
+<style>
+    /* Tema claro (por defecto) */
+    body.theme-light {
+        background-color: white;
+        color: black;
+        transition: 0.3s;
+    }
+
+    /* Tema oscuro */
+    body.theme-dark {
+        background-color: #222;
+        color: white;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        margin: 20px;
+    }
+</style>
+</head>
+
+<body class="theme-light">
+
+<button id="button">Cambiar tema</button>
+
+<script>
+    const themeBtn = document.getElementById('button');
+    const body = document.body;
+
+    themeBtn.addEventListener("click", () => {
+        if (body.classList.contains("theme-light")) {
+            body.classList.replace("theme-light", "theme-dark");
+        } else {
+            body.classList.replace("theme-dark", "theme-light");
+        }
+    });
+</script>
+
+</body>
+</html>

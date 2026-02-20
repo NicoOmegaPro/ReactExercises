@@ -21,7 +21,7 @@ export default function App(){
       </header>
       <main>
         <Routes>
-          <Route path="/movies/:movieId" element={<MovieDetails/>}/>
+          <Route path="/movies/:movieId2" element={<MovieDetails/>}/> //MovieCard manda el movieId2 con movie.id mas link, entonces como existe la url, se muestra "MovieDetails"
           <Route path="/" element={<LandingPage/>}/>
           <Route path="*" element={<Navigate replace to="/"/>}/>
         </Routes>

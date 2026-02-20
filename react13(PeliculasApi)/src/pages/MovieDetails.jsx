@@ -8,16 +8,16 @@ import styles from "./MovieDetails.module.css";
 export function MovieDetails(){
     const[movie,setMovie] = useState(null);
     const[loading,setLoading] = useState(true);
-    const{movieId} = useParams();
+    const{movieId2} = useParams();
 
     useEffect(() => {
         setLoading(true);
 
-        get("/movie/"+movieId).then(data => {
+        get("/movie/"+movieId2).then(data => {
             setMovie(data);
             setLoading(false);
         })        
-    },[movieId]);
+    },[movieId2]);
 
     if(loading) return <Spinner/>;
 
