@@ -1,0 +1,32 @@
+.filter-container{
+
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+table{
+    width: 50%;
+    margin:1rem;
+}
+table, th, td{
+    border: 1px solid black;
+}
+.error{
+    background-color: brown;
+    color:white;
+    padding: 1rem;
+}
+.search-container{
+    padding-top: 1rem;
+    text-align: center;
+    width: 50%;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #000;
+    padding: 1rem;
+    margin:5px;
+}
